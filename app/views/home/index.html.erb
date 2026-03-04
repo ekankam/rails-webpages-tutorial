@@ -1,12 +1,60 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">
-        <%= link_to "Click Here To Generate A New Superhero", root_path %>
+<div class="panel panel-default hero-panel">
+  <div class="panel-heading hero-heading">
+    <h3 class="panel-title hero-title">
+      <%= link_to "Click Here To Generate A New Superhero", root_path %>
     </h3>
   </div>
+
   <div class="panel-body">
-    Panel content
+    <div class="row">
+
+      <!-- Column 1 : Image -->
+      <div class="col-md-4">
+
+        <div class="hero-image-wrap skeleton" id="hero-image-container">
+          <img
+            src="<%= @avatar %>"
+            alt="Your Superhero Image"
+            class="img-responsive hero-avatar"
+            onload="heroImageLoaded()"
+          >
+        </div>
+
+      </div>
+
+      <!-- Column 2 : All Text -->
+      <div class="col-md-4">
+
+        <div class="hero-primary">
+          <h4 class="hero-label">Superhero Name</h4>
+          <p class="hero-main-value"><%= @hero_name %></p>
+        </div>
+
+        <div class="hero-primary">
+          <h4 class="hero-label">Superhero Power</h4>
+          <p class="hero-main-value"><%= @hero_power %></p>
+        </div>
+
+        <hr>
+
+        <div class="hero-secondary">
+          <strong>Undercover Day Job</strong><br>
+          <%= @corp_title %>
+        </div>
+
+        <div class="hero-secondary">
+          <strong>Corporate Superpower</strong><br>
+          <%= @corp_power %>
+        </div>
+
+      </div>
+
+      <!-- Column 3 : Empty -->
+      <div class="col-md-4"></div>
+
+    </div>
   </div>
+
   <div class="panel-footer">
     <%= link_to "Create A Whole Superhero Team", home_team_path %>
   </div>

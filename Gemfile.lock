@@ -121,6 +121,8 @@ GEM
     et-orbi (1.4.0)
       tzinfo
     execjs (2.10.0)
+    faker (3.6.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.17.3-aarch64-linux-gnu)
     ffi (1.17.3-aarch64-linux-musl)
     ffi (1.17.3-arm-linux-gnu)
@@ -435,6 +437,7 @@ DEPENDENCIES
   bundler-audit
   capybara
   debug
+  faker (~> 3.6)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder

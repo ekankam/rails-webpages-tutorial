@@ -11,3 +11,62 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* ---------- Panel Styling ---------- */
+
+.hero-title {
+  color: #1abc9c;
+  font-weight: 600;
+}
+
+/* ---------- Image ---------- */
+
+.hero-image-wrap {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.hero-avatar {
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Skeleton Loader ---------- */
+
+.skeleton {
+  background: linear-gradient(90deg, #eeeeee 25%, #dddddd 37%, #eeeeee 63%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* ---------- Text Hierarchy ---------- */
+
+.hero-label {
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 4px;
+}
+
+.hero-main-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1abc9c;
+}
+
+.hero-secondary {
+  margin-top: 12px;
+  color: #7f8c8d;
+  font-size: 14px;
+}
