@@ -21,10 +21,16 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :application, "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <%= render "home/navbar" %>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <center>
+      Copyright &copy; <%= Time.current.year %> Superhero Name Generator
+    </center>
   </body>
 </html>

@@ -1,17 +1,13 @@
-<h1>Welcome to Rails Playground</h1>
-
-<p>
-This project is a learning space where I am exploring the basics of Ruby on Rails.
-Here I am learning how routes, controllers, views, and layouts work together to
-build a full web application.
-</p>
-
-<p>
-As a frontend engineer, my goal is to better understand the backend side of web
-applications so I can build more complete systems and communicate more effectively
-with backend developers.
-</p>
-
-<p>
-Use the navigation above to explore different pages of the application.
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+        <%= link_to "Click Here To Generate A New Superhero", root_path %>
+    </h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">
+    <%= link_to "Create A Whole Superhero Team", home_team_path %>
+  </div>
+</div>
