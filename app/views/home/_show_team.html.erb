@@ -1,0 +1,46 @@
+<% @team.each do |member| %>
+  <div class="row" style="margin-bottom: 18px;">
+
+    <!-- Column 1 : Image -->
+    <div class="col-md-4">
+      <div class="hero-image-wrap skeleton">
+        <img
+          src="<%= member[:avatar] %>"
+          alt="Superhero Avatar"
+          class="img-responsive hero-avatar"
+        >
+      </div>
+    </div>
+
+    <!-- Column 2 : All Text -->
+    <div class="col-md-4">
+
+      <div class="hero-primary">
+        <h4 class="hero-label">Superhero Name</h4>
+        <p class="hero-main-value"><%= member[:name] %></p>
+      </div>
+
+      <div class="hero-primary">
+        <h4 class="hero-label">Superhero Power</h4>
+        <p class="hero-main-value"><%= member[:power] %></p>
+      </div>
+
+      <hr>
+
+      <div class="hero-secondary">
+        <strong>Undercover Day Job</strong><br>
+        <%= member[:job] %>
+      </div>
+
+      <div class="hero-secondary">
+        <strong>Corporate Superpower</strong><br>
+        <%= member[:corp_power] %>
+      </div>
+
+    </div>
+
+    <!-- Column 3 : Empty -->
+    <div class="col-md-4"></div>
+
+  </div>
+<% end %>

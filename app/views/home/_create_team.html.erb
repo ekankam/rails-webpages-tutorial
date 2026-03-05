@@ -1,0 +1,16 @@
+<div class="form-group">
+  <%= form_tag home_team_path, method: :post do %>
+
+    <%= label_tag :team_number, "Select Team Size" %>
+
+    <%= select_tag :team_number,
+        options_for_select(1..10),
+        class: "form-control" %>
+
+    <br>
+
+    <%= submit_tag "Create Team",
+        class: "btn btn-primary btn-block" %>
+
+  <% end %>
+</div>
